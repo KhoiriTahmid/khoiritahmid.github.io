@@ -1,0 +1,325 @@
+*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+}
+
+nav{
+				width: 100%;
+				height: 8vh;
+				position: fixed;
+				top:0;
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				padding-left:7% ;
+				padding-right:7% ;
+				background-color: white;
+				transition:all 0.5s ease;
+				z-index:10;
+}
+
+nav ul li button{
+			padding: 5px 8px;
+			border:solid black 2px;
+			border-radius:18px;
+			background-color: transparent ;
+			font-size:18px;
+			
+			
+}
+
+nav ul li .nyala:hover{
+				background-color: transparent;
+				color:lightblue;
+				font-weight:bold;
+}
+
+nav ul li .nyala::after{
+				background-color: red;
+}
+
+nav ul li{
+				text-decoration:none;
+				list-style:none;
+}
+
+nav ul{
+				display:flex;
+				justify-content:space-between;
+				width: 18%;
+}
+
+.section1{
+				margin-top: 8vh;
+				height: calc(92vh);
+				width: 100%;
+				background-color: black ;
+				color: white;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+				transition:all 0.5s ease;
+				
+}
+
+.section1 .p1{
+				font-size:70px;
+				margin-bottom:8px;
+}
+
+.section1 .p2{
+      color: lightgrey;
+				font-size:25px;
+				margin-bottom:50px;
+}
+
+.side-bar{
+				width:40%;
+				position: fixed;
+				left:0;
+				top:0;
+				height: 100vh;
+				background-color: black;
+				display:flex;
+				flex-direction:column;
+				transform: translate(-100%,0);
+				transition:all 0.5s ease;
+				opacity:1;
+				z-index:12;
+}
+
+.side-bar .header{
+				display:flex;
+				justify-content:space-between;
+				padding:0 14% ;
+				align-items:center;
+				height:10%;
+				font-size:27px ;
+				font-weight: bold;
+				opacity:1;
+				color: white;
+}
+
+.side-bar .list ul{
+				display:flex;
+				flex-direction:column;
+				padding-top:20px;
+				padding-left:20px;
+}
+
+.side-bar .list ul li{
+					list-style:none;
+					padding:9px 0;
+					margin-left: 42px;
+					width:60% ;
+					display:flex;
+			  	/*justify-content:center;*/
+				 align-items:center;
+				 color: white;
+					font-size:20px ;
+}
+
+.side-bar .list ul li i{
+				margin-right:40%;
+}
+
+
+/* sidebar on*/
+
+.sidebar-on{
+				transform: translate(0%,0);
+				opacity:1;
+}
+
+.other-effect{
+				pointer:none;
+				opacity:0.5;
+}
+
+
+/* button nyala */
+.nyala{
+     border:solid 2px lightblue;
+     background-color: lightblue;
+     transition: all 0.3s ease;
+  }
+  
+  
+  /* input */
+  .section1 div input{
+  				border:solid 2px lightblue;
+  				border-radius:15px;
+  				background-color: lightblue ;
+  				padding:4px 14px;
+  				font-size:20px;
+  				color: black;
+  				align-item:center;
+  }
+  
+  .section1 div button{
+  				padding:4px 8px;
+  				border:solid 2px white;
+  				background-color: transparent ;
+  				font-size:20px;
+  				color: white;
+  				border-radius:15px;
+  				margin-left:6px;
+  }
+  
+  
+  .section2{
+				height: 100vh;
+				width: 100%;
+				background-color: white ;
+				display:flex;
+				justify-content:space-evenly;
+				align-items:center;
+				transition:all 0.5s ease;
+				flex-wrap:wrap;				
+				padding: 30% 0;
+}
+
+.section2 .date{
+				 width: 70%;
+  				height: 20%;
+  				background-color:grey;
+  				margin-top:0;
+  				display:flex;
+  				justify-content:space-evenly;
+}
+.section2 .date div{
+				height:100%;
+				width: 33%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				flex-direction:column;
+}
+
+
+  .section2 .card{
+  				width: 30%;
+  				height: 30%;
+  				background-color:black;
+  				display: flex;
+  				justify-content:center;
+				 align-items:center;  				
+  				color: white;
+  				flex-direction:column;
+  				margin: 0 20px;
+  				padding: 0 5%;
+  				transform: translate-y(30px);
+  			/*	transition: opacity 2s linier;*/
+  				transition: all 1s ease;
+  				opacity:0;
+  				border-radius: 15px;
+  		   -webkit-transition: opacity 2s linier;  
+
+   /* -moz-transition: opacity 2s ease;   */
+
+
+  }
+  
+  /*card nyala*/
+  .section2 .card.normal{
+  				transform: translate-y(0px);
+  				opacity:1;
+  }
+  
+   .section2 .card i{
+   				background-color: lightgrey;
+   				border-radius: 50%;
+   				font-size:60px;
+   	    padding: 20px;
+   	    margin-bottom: 20%;
+   	    transform:rotate(100deg);
+   	    transition: transform 1.5s ease;
+   	    opacity:1;
+   	   
+   }
+   
+   .section2 .card .fa-tree{
+   				color: #3ee138;
+   }
+   
+   /*logo nyala*/
+   .section2 .card i.normalChild{
+   				transform:rotate(0deg);
+   				
+   }
+   
+   .section2 .card div{
+   				display:flex;
+   			  justify-content:center;
+			   	flex-direction:column;
+			   	align-items:center;  	
+   }
+  
+  .section2 .card div h1{
+  				font-size:40px;
+  				margin-bottom:10px;
+  }
+  
+  
+   .section2 .card div p{
+   				text-align:center;
+   				color: lightgrey;
+   				line-height:1.3rem;
+   }
+   
+   .secion2 .date{
+   				width: 70%;
+   				height: 15%;
+   				marg
+   }
+/*
+container {
+  height:100vh;
+  scroll-snap-type:y mandatory/proximity;
+  overflow-y:scroll;
+}
+container section{
+  scroll-snap-align: start;
+  }
+*/
+
+/* nav bottom */
+.nav-btm{
+				display:flex;
+				align-items:center;
+				justify-content:space-evenly;
+				width: 100%;
+				height: 7.5vh;
+				background: white;
+				position:fixed;
+				bottom:0;
+				z-index:15;
+				
+}
+.nav-btm .btn{
+				
+				width: 14%;
+				height: 100%;
+				font-size:40px;
+				border-radius:50%;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+}
+
+.nav-btm .btn i{
+opacity:0.6;
+
+}
+
+.nav-btm .btn:hover{
+				background:grey;
+}
+
+/*style nav-bottom*/
+.nav-bot-active{
+				opacity:1;
+				
+}
